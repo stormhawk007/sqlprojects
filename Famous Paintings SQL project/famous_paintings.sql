@@ -4,7 +4,7 @@ SELECT *
 FROM work
 WHERE museum_id IS NULL;
 
--- 2.) Are there any museums without any ppaintings
+-- 2.) Are there any museums without any paintings
 SELECT m.museum_id,COUNT(work_id) AS num_paintings
 FROM museum m 
 LEFT JOIN work w
